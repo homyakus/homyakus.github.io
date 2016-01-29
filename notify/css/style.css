@@ -177,7 +177,9 @@ p {
 	box-sizing: border-box;
 }
 
-iframe {border-radius: 8px;}
+iframe {border-radius: 8px;
+	float: right;
+}
 
 em {font: 600 16px 'Raleway',Arial, sans-serif;}
 
@@ -230,9 +232,12 @@ blockquote {
 }
 
 .gallery {
-	max-width: 98%;
-	margin: 30px auto 0;
+	
+	margin: auto;
 }
+
+
+.img {margin-top: 5px;}
 
 .section_3 h2 {
 	margin-top: 60px;
@@ -288,3 +293,23 @@ blockquote {
 }
 
 .section4 a:hover {border-bottom: 1px dashed #848484;}
+
+@media screen and (max-width:970px) {
+	blockquote {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 10px;
+	}
+
+	.get {
+		float: none;
+		width: 100%;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.form {
+		display: inline-block;
+		text-align: center;
+	}
+}
