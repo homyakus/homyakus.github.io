@@ -205,6 +205,10 @@ blockquote {
 	margin-right: 5px;
 }
 
+.gallery a:hover {
+	border-bottom: 1px solid black;
+	color: #fff;
+}
 .section_3 h2 {
 	margin-top: 60px;
 	margin-bottom: 25px;

@@ -1,0 +1,86 @@
+a {
+	text-decoration: none;
+	color: #000;
+}
+.container {
+	max-width: 1200px;
+}
+
+.city {
+	width: 100%;
+	margin-left: 6.3%;
+	padding-left: 20px;
+	font: .75em/35px Roboto-Medium, sans-serif;
+	color: #676767;
+	background: #FFF url(../images/icon_city.png) left center no-repeat;
+}
+
+.city a {
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+
+.city a:hover {
+	text-decoration: none;
+}
+
+.logo-bg {
+	width: 100%;
+	height: 137px;
+	background: #000;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c1e+0,000000+100&0.9+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(26,28,30,0.9) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61a1c1e', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 0 0 14px  rgba(0,0,0,.5);
+	box-shadow: 0 0 14px  rgba(0,0,0,.5);
+	z-index: 100;
+}
+
+.logo {
+	width: 284px;
+	height: 284px;
+	background: url(../images/logo.png) no-repeat;
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	margin-left: -142px;
+}
+
+nav {
+	width: 100%;
+	height: 58px;
+	background-color: #c5c5c5;
+	font: 1.125em/52px Roboto-Regular, sans-serif;
+	text-transform: uppercase;
+	padding-top: 6px;
+}
+
+.left_nav{
+	float: left;
+	margin-left: 1.5%;
+}
+
+.right_nav{
+	float: right;
+	margin-right: 1.5%;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0px 15px;
+	border-right: 1px solid #8a8a8a;
+	width: 97px;
+	text-align: center;
+}
+
+nav li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+nav li:first-child {padding-left: 0;}
+
+.two_str {line-height: 18px; height: 52px;}
