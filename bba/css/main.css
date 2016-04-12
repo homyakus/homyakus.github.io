@@ -1,3 +1,15 @@
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -8,10 +20,13 @@ a {
 
 .city {
 	width: 100%;
-	margin-left: 6.3%;
-	padding-left: 20px;
 	font: .75em/35px Roboto-Medium, sans-serif;
 	color: #676767;
+}
+
+.city span {
+	margin-left: 6.3%;
+	padding-left: 20px;
 	background: #FFF url(../images/icon_city.png) left center no-repeat;
 }
 
@@ -30,13 +45,12 @@ a {
 	width: 100%;
 	height: 137px;
 	background: #000;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1c1e+0,000000+100&0.9+0,1+100 */
-background: -moz-linear-gradient(top,  rgba(26,28,30,0.9) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61a1c1e', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  rgba(26,28,30,0.9) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(26,28,30,0.9) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61a1c1e', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 	-webkit-box-shadow: 0 0 14px  rgba(0,0,0,.5);
 	box-shadow: 0 0 14px  rgba(0,0,0,.5);
-	z-index: 100;
 }
 
 .logo {
@@ -53,7 +67,7 @@ nav {
 	width: 100%;
 	height: 58px;
 	background-color: #c5c5c5;
-	font: 1.125em/52px Roboto-Regular, sans-serif;
+	font: 1.125em Roboto-Regular, sans-serif;
 	text-transform: uppercase;
 	padding-top: 6px;
 }
@@ -69,18 +83,46 @@ nav {
 }
 
 nav li {
-	display: inline-block;
+	display: table-cell;
+	height: 52px;
 	padding: 0px 15px;
 	border-right: 1px solid #8a8a8a;
+	-webkit-box-shadow: 1px 1px 1px 1px #d4d4d4;
+	box-shadow: 1px 0  #d4d4d4;
 	width: 97px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 nav li:last-child {
 	border-right: none;
 	padding-right: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 nav li:first-child {padding-left: 0;}
 
-.two_str {line-height: 18px; height: 52px;}
+.promo {
+	width: 100%;
+	height: 300px;
+	font: 2.25em Roboto-Thin, sans-serif;
+}
+
+.promo div {
+	width: 33.3333%;
+	height: 100%;
+	float: left;
+	background-color: black;
+}
+
+.for_group {
+	background: #000 url(../images/group.png) center top no-repeat;
+}
+
+.promo a {
+	display: block;
+	padding: 45px 20px;
+	height: 210px;
+	color: #fff;
+}
