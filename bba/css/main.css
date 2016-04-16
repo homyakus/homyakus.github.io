@@ -133,6 +133,7 @@ nav li:first-child {padding-left: 0;}
 }
 
 .content {
+	width: 70%;
 	float: left;
 	margin-left: 6.3%;
 }
@@ -141,7 +142,7 @@ nav li:first-child {padding-left: 0;}
 }
 
 .news {
-	width: 325px;
+	width: 50%;
 	float: left;
 	
 }
@@ -154,7 +155,7 @@ nav li:first-child {padding-left: 0;}
 	text-align: center;
 }
 .videos {
-	width: 325px;
+	width: 50%;
 	float: right;
 }
 
@@ -168,7 +169,6 @@ nav li:first-child {padding-left: 0;}
 }
 
 .news_wrap {
-	width: 325px;
 	padding-right: 20px;
 	border-right: 2px solid #b8b7b7;
 	-webkit-box-shadow: 1px 0 #cfcfcf;
@@ -211,6 +211,5 @@ nav li:first-child {padding-left: 0;}
 }
 
 .video_wrap {
-	width: 325px;
-	padding-left: 40px;
+	padding-left: 20px;
 }
