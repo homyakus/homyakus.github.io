@@ -1,0 +1,225 @@
+.logo {
+	color: #ec4848;
+	font: 700 2.125em/81px 'PT Sans', Sans-serif;
+	text-transform: uppercase;
+}
+
+.mnu .list-inline li {
+	padding: 0 15px;
+	font: 700 1em/81px Raleway, Sans-serif;
+	text-transform: uppercase;
+}
+
+.mnu a { color: #333; }
+.mnu a:hover { color: #ec4848; text-decoration: none; }
+.mnu span { font-size: 2.125em;}
+
+.search {
+	height: 30px;
+	padding-top: 15px !important;
+	background: url('../img/glass.gif') no-repeat;
+}
+
+.slider {
+	height: 781px;
+	background: url('../img/slider_bg.jpg') no-repeat;
+}
+
+.carousel {
+	margin: 267px 0 0;
+	text-align: center;
+}
+
+.carousel h1 {
+	margin: 0 0 35px;
+	font: 800 6.4286em 'Open Sans', sans-serif;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.carousel p {
+	margin: 0 0 88px;
+	font: 600 1em 'Open Sans', sans-serif;
+	letter-spacing: 0.42em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.slide_but {
+	width: 147px;
+	height: 50px;
+	background-color: #ec4848;
+	border: none;
+	font: 700 1em Raleway, sans-serif;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.description {
+	margin: 100px 0 70px;
+	text-align: center;
+	color: #333;
+}
+
+.description h1, .our-service h1 {
+	margin-bottom: 57px;
+	font: 700 2.8571em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.description p {
+	max-width: 824px;
+	margin: 0 auto;
+	font: 300 1.2857em/30px 'Roboto Condensed',sans-serif;
+}
+
+.list ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.list ul li {
+	margin-bottom: 9px;
+}
+
+.list h3 {
+	margin: 0;
+	padding-left: 20px;
+	background-color: #333;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	font: 600 1.1429em/57px 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+.list h3 span {
+	width: 58px;
+	margin-right: -1px;
+	float: right;
+	border-left: 1px solid #ccc;
+	background: url(../img/toggle.png) center right no-repeat;
+	text-align: center;
+}
+
+.list h3 span.toggle_hover {
+	background: url(../img/toggle_hover.png) center right no-repeat;
+}
+
+.list h3 span.toggle_hover:before {
+	content: "-";
+}
+
+.list h3:hover {
+	background-color: #ec4848;
+	cursor: pointer;
+}
+
+h3.active {
+	background-color: #ec4848;
+}
+
+.list_desc {
+	margin-top: -1px;
+	padding: 35px 58px 37px 23px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+
+.list h3 span:before {
+	content: "+";
+}
+
+.diagram li {
+	margin: 0 0 28px 0;
+	list-style-type: none;
+	background-color: #f2f2f2;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.percent {
+	padding-left: 18px;
+	background-color: #ec4848;
+	font: 400 1.1429em/31px 'Roboto Condensed', sans-serif;
+	color: #fff;
+}
+
+.service-item {
+	padding: 27px;
+	background: #fff center 33px no-repeat;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.service-item h2 {
+	font: 700 1.5714em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	margin-bottom: 31px;
+}
+
+.service-item p {
+	font: 300 1.125em/25px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.our-service h1 {
+	margin-top: 100px;
+}
+
+.service-item button {
+	display: block;
+	margin: 39px auto 15px;
+}
+
+.icon {
+	margin: 6px 0 61px;
+	font-size: 5.5em;
+	text-align: center;
+}
+
+.service-item:hover {
+	background-color: #3f444a;
+	color: #fff;
+	-webkit-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+}
+
+.service {
+	margin-bottom: 101px;
+}
+
+.join {
+	background: #000 url('../img/join-bg.gif');
+	text-align: center;
+	color: #fff;
+}
+
+.user-add {
+	margin: 100px auto 0;
+	width: 64px;
+	height: 62px;
+	background: url('../img/user-add-icon.png');
+}
+
+.join h1 {
+	margin: 23px 0 60px;
+	font: 700 2.5em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+
+.join p {
+	margin-bottom: 35px;
+	font: 300 1.2857em/30px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.join button {
+	margin-bottom: 98px;
+}
