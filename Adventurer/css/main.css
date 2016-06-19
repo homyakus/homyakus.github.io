@@ -1,3 +1,5 @@
+ul {padding: 0; margin: 0;}
+
 .logo {
 	color: #ec4848;
 	font: 700 2.125em/81px 'PT Sans', Sans-serif;
@@ -10,14 +12,12 @@
 	text-transform: uppercase;
 }
 
+.mnu .list-inline li:last-child {padding-right: 0;}
 .mnu a { color: #333; }
 .mnu a:hover { color: #ec4848; text-decoration: none; }
-.mnu span { font-size: 2.125em;}
 
 .search {
-	height: 30px;
-	padding-top: 15px !important;
-	background: url('../img/glass.gif') no-repeat;
+	font-size: 2.1429em;
 }
 
 .slider {
@@ -204,7 +204,8 @@ h3.active {
 	margin: 100px auto 0;
 	width: 64px;
 	height: 62px;
-	background: url('../img/user-add-icon.png');
+	font-size: 4.4286em;
+	content: "\e809";
 }
 
 .join h1 {
@@ -222,4 +223,260 @@ h3.active {
 
 .join button {
 	margin-bottom: 98px;
+}
+
+.offer-item {
+	padding-left: 200px;
+	margin-bottom: 60px;
+}
+
+.cloud {background: url('../img/cloud-icon.png') 82px center no-repeat;}
+.shop {background: url('../img/shop-icon.png') 82px center no-repeat;}
+.graph {background: url('../img/graph-icon.png') 82px center no-repeat;}
+.basket {background: url('../img/basket-icon.png') 82px center no-repeat;}
+
+.offer h1, .review h1 {
+	margin: 0;
+	font: 700 2.8571em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	color: #3f444a;
+	text-align: center;
+}
+
+.header-offer {
+	margin: 100px 0 60px;
+}
+
+.header-review {
+	margin: 30px 0 0 0;
+}
+
+.offer-item h2{
+	margin: 0 0 20px;
+	font: 700 1.7857em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #3f444a;
+	letter-spacing: 0.01em;
+}
+
+.offer-item p {
+	font: 300 1.2857em/25px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+	color: #5c6873;
+
+}
+.header-review {
+	margin-bottom: 58px;
+}
+.review-text h2 {
+	margin: 11px 0 0 0;
+	font: 700 1.7857em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #3f444a;
+	letter-spacing: 0.01em;
+}
+
+.review-text span {
+	font: 700 1em 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #ec4848;
+	letter-spacing: 0.01em;
+}
+
+.review-text p {
+	margin: 30px 0 0 0;
+	font: 300 1.2857em/25px 'Roboto Condensed', sans-serif;
+	color: #5c6873;
+	letter-spacing: 0.01em;
+}
+
+.review-item {
+	margin-bottom: 65px;
+}
+
+.review-nav {font-size: 0;}
+.review-nav ul li {
+	display: inline-block;
+	margin: 0 3px 0;
+	width: 13px;
+	height: 13px;
+	border-radius: 6.5px;
+	background-color: #3f444a;
+}
+
+.review-nav ul li a {
+	display: block;
+	height: 100%;
+}
+
+.review-nav ul li:hover {
+	background-color: #ec4848;
+}
+
+.plus-items {
+	margin-top: 90px;
+	height: 374px;
+	background: url('../img/pluses-bg.jpg');
+}
+
+.plus-item {
+	margin-top: 63px;
+	padding-top: 49px;
+	height: 248px;
+	background-color: rgba(236, 72, 72, .3);
+	text-align: center;
+}
+
+.plus-item i {
+	font-size: 2.9286em;
+	color: #fff;
+}
+
+.plus-item h2 {
+	font: 700 2.8571em 'Roboto Condensed', sans-serif;
+	color: #fff;
+	letter-spacing: 0.01em;
+}
+
+.plus-item span {
+	font: 400 1em 'Roboto Condensed', sans-serif;
+	color: #fff;
+	letter-spacing: 0.46em;
+	text-transform: uppercase;
+}
+
+.team-item {
+	position: relative;
+	height: 300px;
+	background-color: #ccc;
+}
+
+.team-item-1 { background: url('../img/team-item-1.jpg') no-repeat; }
+.team-item-2 { background: url('../img/team-item-2.jpg') no-repeat; }
+.team-item-3 { background: url('../img/team-item-3.jpg') no-repeat; }
+.team-item-4 { background: url('../img/team-item-4.jpg') no-repeat; }
+
+.team-item-hover {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #e7494a;
+	color: #fff;
+	text-align: center;
+	transition: ease-out 300ms;
+}
+
+.team-item-hover h3 {
+	margin: 6px 0 0 0;
+	font: 400 1.7857em/30px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.team-item-hover span {
+	font: 400 1.2857em/30px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.team-item-hover ul {margin: 2px 0 0 0; padding: 0 0 8px 0;}
+.team-item ul li a {color:#fff; padding-bottom: 4px;}
+
+.team-item ul li a:hover {
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+
+.team-item-hover ul li {	display: inline-block; }
+.team-item:hover .team-item-hover {	display: block; }
+
+.team h1, .works h1 {
+	margin: 0;
+	text-align: center;
+	font: 700 2.8571em/190px 'Roboto Condensed', sans-serif;
+	color: #3f444a;
+	text-transform: uppercase;
+}
+
+.team p, .works p {
+	margin: 0 0 56px 0;
+	text-align: center;
+	font: 300 1.2857em/32px 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
+	color: #5c6873;
+}
+
+.works-nav ul li{
+	display: inline-block;
+	padding-right: 34px;
+}
+.works-nav ul li:last-child { padding: 0; }
+.works-nav ul {
+	text-align: center;
+}
+.works-nav a {
+	font: 700 1.1429em/116px 'Roboto Condensed', sans-serif;
+	color: #3f444a;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+}
+.works-nav a:hover { color: #ec4848; text-decoration: none;}
+
+.work-item {
+	text-align: center;
+}
+
+.work-img	{
+	height: 200px;
+	border: 1px solid #abaaaa;
+}
+
+.work-img-1 {background: url('../img/work-img-1.jpg') center center no-repeat;}
+.work-img-2 {background: url('../img/work-img-2.jpg') center center no-repeat;}
+.work-img-3 {background: url('../img/work-img-3.jpg') center center no-repeat;}
+.work-img-4 {background: url('../img/work-img-4.jpg') center center no-repeat;}
+.work-img-5 {background: url('../img/work-img-5.jpg') center center no-repeat;}
+.work-img-6 {background: url('../img/work-img-6.jpg') center center no-repeat;}
+
+.work-hover {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(236, 72, 72, 0.78);
+}
+
+.work-img:hover .work-hover {display: flex; justify-content: center; align-items: center;}
+.work-img:hover { border-color: #b83838; }
+
+.zoom, .link {
+	width: 32px;
+	height: 32px;
+	border: 3px solid #fff;
+	border-radius: 16px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.connect {
+	width: 13px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.work-hover-links a {
+	color: #fff;
+}
+
+.work-item h3 {
+	margin-bottom: 0;
+	font: 300 1.4286em/32px 'Roboto Condensed', sans-serif;
+	color: #5c6873;
+	letter-spacing: 0.01em;
+}
+
+.work-item p {
+	font: 300 0.8571em 'Roboto Condensed', sans-serif;
+	letter-spacing: 0.01em;
 }

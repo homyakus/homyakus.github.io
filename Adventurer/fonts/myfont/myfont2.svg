@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="myfont2" horiz-adv-x="1000" >
+<font-face font-family="myfont2" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="heart" unicode="&#xe800;" d="M500-79q-14 0-25 10l-348 336q-5 5-15 15t-31 36-38 55-30 67-13 77q0 123 71 192t196 70q34 0 70-12t67-33 54-38 42-38q20 20 42 38t54 38 67 33 70 12q125 0 196-70t71-192q0-123-128-251l-347-335q-10-10-25-10z" horiz-adv-x="1000" />
+
+<glyph glyph-name="ok" unicode="&#xe801;" d="M932 534q0-22-15-38l-404-404-76-76q-16-15-38-15t-38 15l-76 76-202 202q-15 16-15 38t15 38l76 76q16 16 38 16t38-16l164-165 366 367q16 16 38 16t38-16l76-76q15-16 15-38z" horiz-adv-x="1000" />
+
+<glyph glyph-name="beer" unicode="&#xe802;" d="M357 350v214h-143v-143q0-29 21-50t51-21h71z m572-250v-107h-643v107l71 107h-71q-89 0-152 63t-63 151v179l-35 36 18 71h267l18 72h536l18-108-36-17v-447z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="repeat-2" unicode="&#xe803;" d="M953 491h-203a47 47 0 0 0 0 93h81a406 406 0 0 1-737-234 47 47 0 1 0-94 0h0a500 500 0 0 0 906 290v85a47 47 0 1 0 94 0v-187a47 47 0 0 0-47-47z m-906-282h203a47 47 0 0 0 0-93h-81a406 406 0 0 1 737 234 47 47 0 1 0 94 0h0a499 499 0 0 0-906-290v-85a47 47 0 1 0-94 0v188a47 47 0 0 0 47 46z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
