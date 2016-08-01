@@ -28,7 +28,6 @@ $(function() {
   $(".owl-carousel").owlCarousel({
 		items: 1,
 		loop: true,
-		nav: true
+		navText: ["<i class='icon-left'></i>", "<i class='icon-right'></i>"]
 	});
-
 });
