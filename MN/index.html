@@ -26,7 +26,6 @@
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
-
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
 	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
@@ -123,41 +122,58 @@
         </div>
         <div class="col-md-2">
 
-					<div className="nav-item-wrap">
+					<div class="nav-item-wrap">
 						<div class="main-nav-item school">
 							<a href="#">Школа</a>
+							<div class="row">
+								<ul class="hover-mnu">
+									<li>
+										<a href="#">Вопрос / Ответ</a>
+									</li>
+									<li>
+										<a href="#">Обучение</a>
+									</li>
+									<li>
+										<a href="#">Преподаватели</a>
+									</li>
+									<li>
+										<a href="#">Как попасть</a>
+									</li>
+									<li>
+										<a href="#">Расписание</a>
+									</li>
+									<li>
+										<a href="#">Группы</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<ul class="hover-mnu">
-							<li>
-								<a href="#">Вопрос / Ответ</a>
-							</li>
-							<li>
-								<a href="#">Обучение</a>
-							</li>
-							<li>
-								<a href="#">Преподаватели</a>
-							</li>
-							<li>
-								<a href="#">Как попасть</a>
-							</li>
-							<li>
-								<a href="#">Расписание</a>
-							</li>
-							<li>
-								<a href="#">Группы</a>
-							</li>
-						</ul>
 					</div>
 
         </div>
         <div class="col-md-2">
 
-					<div class="main-nav-item media"><a href="#">Медиа</a></div>
+				<div class="nav-item-wrap">
+					<div class="main-nav-item media">
+						<a href="#">Медиа</a>
+						<ul class="hover-mnu">
+							<li>
+								<a href="#">Фото</a>
+							</li>
+							<li>
+								<a href="#">Видео</a>
+							</li>
+							<li>
+								<a href="#">Аудио</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
         </div>
         <div class="col-md-2">
 
-					<div class="main-nav-item contacts"><a href="#">Контакты</a></div>
+					<div class="main-nav-item contacts-mnu"><a href="#">Контакты</a></div>
 
         </div>
         <div class="col-md-2">
@@ -170,8 +186,81 @@
 
   </nav>
 
-	<p class="test">jdtnbkjdntkjbdj</p>
+<section class="main-content">
 
+  <div class="container">
+    <div class="row first">
+      <div class="col-md-3">
+
+        <div class="box stock">
+          <h2>Акция</h2>
+          <div class="content">
+            <p>В честь 5-летия центра!!!</p>
+            <p>Каждому, начавшему обучение в сентябре 2016 –
+              фирменная футболка «Music Next» в подарок!*</p>
+            <p>*Подробности по телефону: <a href="#">287-37-65</a></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-5">
+
+			  <div class="box join">
+			    <h2>Как попасть</h2>
+			    <div class="content">
+						<h3>ДЛЯ ДЕТЕЙ ОТ 4 ЛЕТ</h3>
+						<span>Комплекс «3 в 1»</span>
+						<ul>
+							<li>Эстрадный вокал </li>
+							<li>Хореография</li>
+							<li>Актёрское мастерство</li>
+						</ul>
+						<span>Индивидуально и в группах:</span>
+						<p>4-6 лет; 7-8 лет; 9-11 лет; 12-14 лет.</p>
+						<h3>ДЛЯ ВЗРОСЛЫХ</h3>
+						<ul>
+							<li>Эстрадный вокал</li>
+							<li>Ораторское искусство</li>
+							<li>Синтезатор / Нотная грамота</li>
+						</ul>
+						<san>Индивидуально</span>
+						<a href="#" class="button">Записаться на бесплатное прослушивание</a>
+			    </div>
+			  </div>
+
+
+      </div>
+      <div class="col-md-4">
+
+
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+				<div class="box about">
+					<h2>О центре</h2>
+					<div class="content">
+						<p>Эстрадный центр «Music Next» - это круг друзей увлеченных творчеством! Уже более пяти лет мы поём, танцуем, ставим музыкальные спектакли и радуем зрителей яркими выступлениями. Это волшебное место, где  профессиональная команда педагогов ежедневно помогает маленьким и взрослым раскрывать свои таланты и воплощать в жизнь заветные мечты о сцене.</p>
+
+						<p>Солисты и коллективы центра активно принимают участие в концертных мероприятиях и творческих проектах города, включая благотворительные программы. Они так же ежегодно подтверждают звание  лауреатов, являясь победителями множества вокальных конкурсов различного масштаба - от городских до международных.</p>
+
+						<p>Методики, используемые в обучении, адаптированы к возрастным особенностям учеников. Они надёжны и проверены ни одним поколением профессиональных артистов, что даёт возможность гарантировать 100%  результат при регулярном посещении занятий.</p>
+
+						<p>Мы гордимся своими выпускниками, которые связали свою жизнь с музыкальным и театральным   искусством, продолжив получать образование в специализированных ВУЗах. Для нас важно, чтобы ученики не только погружались в творческий процесс, но получали знания и возможности для дальнейшего профессионального роста.</p>
+
+						<p>Уважаемые родители! Если Ваш ребенок мечтает о сцене, а Вы стремитесь привить ему любовь к искусству, мы с радостью примем Вас в свой дружный коллектив! Кто знает, может быть, именно в Вашей семье растёт настоящая звезда!</p>
+
+
+					</div>
+				</div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
 	<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
