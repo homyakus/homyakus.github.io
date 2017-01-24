@@ -18,13 +18,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif; }
-
-* {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
+h1, h2, h3, h4, h5, h6, span, p { font-family: 'Roboto Slab', Arial, Helvetice Neue, sans-serif; }
 
 .templatemo_clear {
 	clear: both;
@@ -54,47 +48,47 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-top-menu .navbar-brand {
+    max-width: 220px;
     padding: 0;
     margin: 30px 0 0 0;
 }
-
 /* ------ Carousel ----- */
 
 #templatemo-carousel {
-    background: url('../images/templatemo_carousel_bg.jpg') no-repeat center bottom fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow-x: hidden;
     margin-bottom:0;
-    height: 500px;
+    height: 600px;
+    background: transparent;
 }
 
 #templatemo-carousel .carousel-caption {
     z-index: 10;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    border: 5px solid #0963B7;
+    font-family: Roboto Slab, serif;
 }
 
 #templatemo-carousel .item {
-    height: 500px;
-}
-#templatemo-carousel .carousel-inner > .item > img {
-    position: absolute;
-    min-width: 100%;
-    height: 500px;
-    left: 0;
-    top: 0;
+    height: 470px;
+    font-family: Roboto Slab, serif;
 }
 
+.carousel-caption h1 {
+    font-family: Roboto Slab, serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+}
 @media (min-width: 768px) {
     #templatemo-carousel .carousel-caption p {
         margin-bottom: 20px;
         line-height: 1.4;
-        font-size: 21px;
+        font-size: 2em;
+        padding: 20px 0;
+        font-family: Roboto Slab, serif;
     }
 
     #templatemo-carousel .carousel-caption {
-        padding-bottom: 140px;
         right: 20%;
         left: 20%;
     }
@@ -103,6 +97,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 @media (max-width: 768px) {
     #templatemo-carousel .carousel-caption {
         padding-bottom: 120px;
+    }
+
+    .grafik {
+        display: none;
     }
 }
 
@@ -125,6 +123,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .templatemo-welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 230px;
+    -webkit-box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.3);
 }
 
 .templatemo-slogan {
@@ -164,17 +164,18 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top: 12px;
     font-size: 0.65em;
     font-weight: bold;
-    color: #e67e22;
+    color: #0963B7;
 }
 
 #phone {
     position: relative;
     height: 100%;
+    padding-left: 35px;
 }
 
 .subheader a {
-    color: #e67e22;
-    border-bottom: 1px dashed #e67e22;
+    color: #0963B7;
+    border-bottom: 1px dashed #0963B7;
 }
 
 .subheader a:hover {
@@ -184,15 +185,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 #phone::before {
     display: block;
-    width: 22px;
-    height: 22px;
-    content: '';
-    background-image: url(../images/phone.png);
-    background-repeat: no-repeat;
+    content: '\f095';
     position: absolute;
-    top: 50%;
-    left: -25px;
-    margin-top: -10px;
+    left: 0;
+    font-family: FontAwesome;
+    font-size: 2em;
+    line-height: 2.3em;
 }
 
 #email {
@@ -204,19 +202,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 #email::before {
     display: block;
-    width: 22px;
-    height: 20px;
-    content: '';
-    background-image: url(../images/email.png);
+    content: '\f0e0';
     position: absolute;
-    top: 50%;
     left: -27px;
-    margin-top: -10px;
+    font-family: FontAwesome;
 }
 
 .btn-orange {
-    background-color: #ff7600;
-    border-bottom:2px solid #d35400;
+    background-color: #0963B7;
+    border-bottom:2px solid #031E37;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -224,48 +218,53 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
-    background-color: #d35400;
+    background-color: #064784;
     color:#ffffff;
 }
 
 .btn-green {
-    background-color:#2ecc71;
-    border-bottom:2px solid #27ae60;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    color:#ffffff;
+    border: 2px solid #27ae60;
+    color:#27ae60 !important;
     font-size: 1.25em;
     font-weight: bold;
-    color: #fff !important;
-    padding: 10px 10px !important;
-    margin: 0 !important;
+    padding: 0 10px !important;
+    margin: 20px 0 0 0 !important;
+    line-height: 50%;
+    border-radius: 3px;
+    text-transform: none !important;
 }
 
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
+.nav > li > a.btn-green {
+    display: block;
+    line-height: 40px;
+}
+
+.btn-green:hover {
     background-color: #27ae60 !important;
-    color:#ffffff;
+    color:#ffffff !important;
+    border-bottom: 2px solid #27ae60 !important;
+    transition: all ease-out 300ms;
 }
 
 .nav > li > a {
-    padding: 10px 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-    background-color: #ff7600;
-    color:#fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #ff7600;
-    color:#fff;
+    border-bottom: 5px solid #0963B7;
 }
 
 
 .nav > li > a {
     color: #929292;
+    line-height: 80px;
 }
 .navbar-default {
     background-color:#fff;
@@ -275,14 +274,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #ff7600;
-    color:#fff;
+    border-bottom: 5px solid #0963B7;
 }
 
 .navbar-default .navbar-nav > .active > a.btn-green,
 .navbar-default .navbar-nav > .active > a.btn-green:hover,
 .navbar-default .navbar-nav > .active > a.btn-green:focus {
     background-color: #27ae60;
+    color: #fff !important;
+    border-bottom: none;
 }
 .navbar {
     margin-bottom: 0px;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .team_hr {
     border: 1px solid #fff; 
-    width: 39.5%; 
+    width: 38.5%; 
     float: left;
 }
 
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .txt_orange {
-    color: #e67e22;
+    color: #0963B7;
 }
 
 .txt_slogan {
@@ -475,6 +475,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 #templatemo-contact {
 	font-size:14px;
+    padding-bottom: 100px;
+    -webkit-box-shadow: 0 5px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 5px 1px rgba(0,0,0,0.3);
 }
 .templatemo-contact-map {
     margin-bottom: 15px;
@@ -488,10 +491,16 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom:0;
 }
 
-.contact_right img {
-	margin-right:5px;
+
+.contact_right .fa {
+    padding-right: 10px;
 }
 
+.contact_right .fa-phone {
+    display: block;
+    position: absolute;
+    left: 15px;
+}
 .contact_right form {
 	padding-left:15px;
 	padding-right:15px
@@ -516,10 +525,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom: 5px;
 }
 
-.templatemo-footer {
-	border-top: 2px solid #cccccc; 
-	margin-top: 100px;
-}
 
 .footer_container {
 	margin-top:60px; 
@@ -530,7 +535,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	margin: auto;
 	margin-bottom: 30px;
 	font-size: 14px;
-	color:#333333;
+	color:#fff;
 }
 
 .social-icon-fb {
@@ -597,17 +602,17 @@ ul.templatemo-project-gallery  li  a img:hover {
 }
 
 .templatemo-gallery-category a.active {
-	color:#e67e22; 
+	color:#0963B7; 
 	text-decoration:none;
 }
 
 .templatemo-gallery-category a:focus {
-	color:#e67e22;
+	color:#0963B7;
 	text-decoration:none;	
 }
 
 .templatemo-gallery-category a:hover {
-	color:#e67e22; 
+	color:#0963B7; 
 	text-decoration:none;
 }
 
@@ -647,8 +652,7 @@ ul.templatemo-project-gallery  li  a img:hover {
 }
 
 .btn_loadmore {
-	margin-top:50px !important; 
-	margin-bottom:80px !important;
+    line-height: 50px;
 }
 
 .blog_box {
@@ -679,6 +683,24 @@ iframe {
     height: 378px;
 }
 
+.logo {
+    text-transform: uppercase;
+}
+
+.grafik {
+    text-align: center;
+}
+.grafik-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.grafik-list li {
+    display: inline;
+}
+.wkend {
+    color: red;
+}
 @media (min-width:991px) and (max-width:1200px) {
     .templatemo-project-box, .project-overlay {
         height:170px;
@@ -740,8 +762,6 @@ iframe {
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    padding-top: 9px;
-    padding-bottom: 9px;
   } 
 }
 

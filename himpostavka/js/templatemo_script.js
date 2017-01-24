@@ -1,4 +1,14 @@
 var top_menu_height = 0;
+$('.carousel').parallax({
+    imageSrc: './images/1.jpg',
+    position: 'center bottom',
+    speed: 0.2
+});
+$('#footer').parallax({
+    imageSrc: './images/2.jpg',
+    position: 'center center',
+    speed: 0.2
+});
 jQuery(function($) {
 		$(window).load( function() {
 			$('.external-link').unbind('click');	
@@ -28,11 +38,7 @@ jQuery(function($) {
             $(this).blur();
             return false;
         });
-		/*
-		var dt = window.atob('IHwgRGVzaWduOiA8YSByZWw9Im5vZm9sbG93IiBocmVmPSJodHRwOi8vd3d3LnRlbXBsYXRlbW8uY29tL3RtLTM5NS11cmJhbmljIiB0YXJnZXQ9Il9wYXJlbnQiPlVyYmFuaWM8L2E+'); // decode the string
-		var div = document.getElementById('footer-line');
-		div.innerHTML = div.innerHTML + dt;
-		*/
+
         // to stick navbar on top
         $('.templatemo-top-menu ').stickUp();
 
@@ -71,4 +77,21 @@ function scrollTo(selectors)
 }
 
  new WOW().init();
+
+ var news = 6; // - количество отображаемых новостей
+
+    $("#list1 > li:not(:lt("+news+")), #list2 > li:not(:lt("+news+")), #list3 > li:not(:lt("+news+"))").hide();
+
+    $(".btn_loadmore").click(function (e){
+      e.preventDefault();
+      if( $(".product_list > li:eq("+news+")").is(":hidden") )
+      {
+        $(".product_list > li:hidden").slideDown();
+      }
+      else
+      {
+        $("#list1 > li:not(:lt("+news+")), #list2 > li:not(:lt("+news+")), #list3 > li:not(:lt("+news+"))").slideUp();
+      }
+    });
+
 
