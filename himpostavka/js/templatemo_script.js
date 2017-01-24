@@ -4,11 +4,6 @@ $('.carousel').parallax({
     position: 'center bottom',
     speed: 0.2
 });
-$('#footer').parallax({
-    imageSrc: './images/2.jpg',
-    position: 'center center',
-    speed: 0.2
-});
 jQuery(function($) {
 		$(window).load( function() {
 			$('.external-link').unbind('click');	
